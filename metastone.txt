@@ -1,0 +1,5 @@
+//adding public rsa keys to authorized_keys so you can push stuff via git (server)
+cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys
+
+//adding repo as origin in a project (local)
+git remote add origin git@scerbakov.com:/var/lib/nodejs/metastone/
